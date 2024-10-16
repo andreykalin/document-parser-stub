@@ -1,31 +1,32 @@
-# Описание
+## Описание
 Заглушка для моделирования поведения интерфейса сервиса разбора документа
 
-Принимает запрос POST */api/rest/services/llm/docverify*
-
+Принимает запрос POST
+```
 http://<host>:<port>/document-parser-stub/api/rest/services/llm/docverify
-
+```
 Данные в виде multipart/form-data
 Возвращает всегда один и тот же ответ
 
 Swagger-ui
+```
 http://<host>:<port>/document-parser-stub/swagger-ui/index.html
-
+```
 По умолчанию порт 8080, меняется переменной среды port
 
-# Требования
+## Требования
 
 1. Java 17
 2. gradle 7.5 +
 3. docker-compose 1.29+
 
-# Сборка приложения
+## Сборка приложения
 
 ```
 gradle clean build
 ```
 
-# Запуск приложения
+## Запуск приложения
 
 ```
 cd docker
