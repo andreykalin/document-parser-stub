@@ -6,7 +6,8 @@
 http://<host>:<port>/document-parser-stub/api/rest/services/llm/docverify
 ```
 Данные в виде multipart/form-data
-Возвращает всегда один и тот же ответ
+
+Заглушка возвращает всегда один и тот же ответ
 
 Swagger-ui
 ```
