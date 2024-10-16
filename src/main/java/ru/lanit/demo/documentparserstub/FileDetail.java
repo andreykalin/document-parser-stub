@@ -24,7 +24,10 @@ public class FileDetail {
     private String issueDate;
 
     @Schema(description = "Код подразделения", example = "770-001", required = false)
-    private String issueOrgancode;
+    private String issueOrganCode;
+
+    @Schema(description = "Где выдан", example = "Москва", required = false)
+    private String issuePlace;
 
     @Schema(description = "Фамилия", example = "Иванов", required = false)
     private String lastName;

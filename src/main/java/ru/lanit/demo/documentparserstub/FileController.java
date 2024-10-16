@@ -44,7 +44,8 @@ public class FileController {
         fileDetail.setSeries("1234");
         fileDetail.setNumber("567890");
         fileDetail.setIssueDate("2020-01-01");
-        fileDetail.setIssueOrgancode("770-001");
+        fileDetail.setIssueOrganCode("770-001");
+        fileDetail.setIssuePlace("Москва");
         fileDetail.setLastName("Иванов");
         fileDetail.setFirstName("Иван");
         fileDetail.setMiddleName("Иванович");
