@@ -1,0 +1,32 @@
+server:
+  port: ${port:8080}
+  error:
+    whitelabel:
+      enabled: false
+    include-exception: ${INCLUDE_EXCEPTION:true}
+    include-message: ${INCLUDE_MESSAGE:always}
+    include-binding-errors: ${INCLUDE_BINDING_ERRORS:always}
+    include-stacktrace: ${INCLUDE_STACKTRACE:always}
+  tomcat:
+    max-http-form-post-size: 15MB
+  servlet:
+    context-path: /document-parser-stub
+
+jackson:
+  default-property-inclusion: non_null
+  visibility:
+    field: any
+    getter: none
+  time-zone: Europe/Moscow
+
+spring:
+  application:
+    name: document-parser-stub
+
+springdoc:
+  api-docs:
+    path: /swagger/openapi.json
+  swagger-ui:
+    path: /swagger-ui
+    disable-swagger-default-url: true
+    enabled: {SWAGGER_ENABLED: true}
